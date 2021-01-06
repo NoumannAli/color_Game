@@ -90,46 +90,6 @@ function reset(){
 
 }
 
-
-// easyButton.addEventListener("click", function(){
-
-// 	easyButton.classList.add("selected")
-// 	hardButton.classList.remove("selected")
-// 	rgbcolors = genrateRandomNumber(3);
-// 	 RightColor = randomNum();
-// 	 colorDisplay.textContent = RightColor;
-
-// 	 for(var i =0 ; i<squares.length; i++){
-// 	 	if(rgbcolors[i]){
-// 	 		squares[i].style.background = rgbcolors[i];
-// 	 	}else{
-// 	 		squares[i].style.display = "none";
-// 	 	}
-// 	 }
-// })
-
-// hardButton.addEventListener("click", function(){
-	
-// 	hardButton.classList.add("selected");
-// 	easyButton.classList.remove("selected");
-
-
-
-// 	rgbcolors = genrateRandomNumber(6);
-// 	RightColor = randomNum();
-// 	colorDisplay.textContent = RightColor;
-// 	 colorDisplay.textContent = RightColor;
-
-// 	for(var i =0 ; i< squares.length; i++){
-// 		squares[i].style.background = rgbcolors[i];
-// 		squares[i].style.display = "block";
-// 	}
-
-// })
-
-
-
-
 resetButton.addEventListener("click", function(){
 
 	rgbcolors = genrateRandomNumber(numSquares);
@@ -152,47 +112,13 @@ resetButton.addEventListener("click", function(){
 	}
 
 
-
-	// for(var i = 0; i< squares.length; i++){
-	// 	if(squares[i].textContent === "EASY")
-	// squares[i].style.background  = rgbcolors[i];}
+	
 
 	h1.style.background = "steelblue";
 
 })
 
 colorDisplay.textContent = RightColor;
-
-// for(var i = 0; i< squares.length; i++){
-// 	squares[i].style.background  = rgbcolors[i];
-
-// 	squares[i].addEventListener("click", function(){
-// 		var clickedColor = this.style.background;
-
-// 		console.log(clickedColor)
-	
-
-
-// 		if(clickedColor === RightColor){
-// 			displayAnswer.textContent = "Correct";
-// resetButton.textContent = ("Play Again");
-
-// 	h1.style.background = clickedColor;
-			
-// 			randomColors(clickedColor);
-
-// 		}else{
-// 			this.style.background = "#232323";
-// 			displayAnswer.textContent = "Try Again";
-
-
-// 		}
-
-// 	});
-
-// }
-
-
 
 
 function randomColors(colors){
@@ -207,35 +133,6 @@ function randomNum(){
 	return rgbcolors[random];
 
 }
-
-
-
-// function genrateRandomNumber(num){
-// 	var arr = []
-
-// for(var i =0 ; i<num ; i++){
-  
-//  arr.push(randomColor())
-	
-// }
-//    return arr;
-// }
-
-
-// function randomColor(){
-// 	var r = Math.floor(Math.random() * 256);
-
-// 	var g = Math.floor(Math.random() * 256);
-
-// 	var b = Math.floor(Math.random() * 256);
-
-// 	return "rgb(" + r + ", " + g + ", " + b + ")";
-// }
-
-
-
-
-
 
 
 function genrateRandomNumber(num){
